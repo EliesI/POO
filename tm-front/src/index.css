@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* montserrat-400 - latin */
+  @font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    src: url("/assets/fonts/montserrat-v26-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* fira-sans-400 - latin */
+  @font-face {
+    font-family: "fira-sans";
+    font-weight: 400;
+    src: url("/assets/fonts/fira-sans-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* comic-neue-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Comic Neue";
+    font-style: normal;
+    font-weight: 400;
+    src: url("@/assets/fonts/comic-neue-v8-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+}

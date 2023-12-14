@@ -1,0 +1,27 @@
+version: "3.3"
+services:
+  tmfront:
+    container_name: tmfront
+    stdin_open: true
+    tty: true
+    build: .
+    # ports:
+    #   - "8080:8080"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.pooger-front.rule=Host(`pooger.epitech.musubi.dev`)"
+      - "traefik.http.routers.pooger-front.entrypoints=websecure"
+      - "traefik.http.routers.pooger-front.tls.certresolver=letsencryptresolver"
+      # Middleware basic auth
+      # - "traefik.http.routers.pooger-front.middlewares=pooger-auth"
+      # - "traefik.http.middlewares.pooger-auth.basicauth.users=musubi42:$$2y$$10$$jZA5HZUPZbKKofFGNRqzOObt7O0hbFEqoVhe5adthzaszcMG3yhI6"
+      # .basicauth.users=musubi42:$$2y$$10$$jZA5HZUPZbKKofFGNRqzOObt7O0hbFEqoVhe5adthzaszcMG3yhI6
+      # - "traefik.http.middlewares.simple-auth"
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
+  internal:
+    external: false

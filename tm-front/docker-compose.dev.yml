@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  tmfront:
+    container_name: tmfront
+    stdin_open: true
+    tty: true
+    build: .
+    ports:
+      - "8080:8080"

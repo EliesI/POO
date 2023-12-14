@@ -1,0 +1,52 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 14 14"
+  >
+    <circle
+      cx="7"
+      cy="7"
+      r="6.5"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M5.5 5.5A1.5 1.5 0 1 1 7 7v1"
+    />
+    <path
+      fill="currentColor"
+      d="M7 9.5a.75.75 0 1 0 .75.75A.76.76 0 0 0 7 9.5Z"
+    />
+  </svg>
+</template>
+
+<!-- <script>
+export default {
+  name: "FaqIcon",
+};
+</script> -->
+
+<script>
+export default {
+  name: "FaqSvg",
+};
+</script>
+
+<style>
+.my-svg-component {
+  height: 32px;
+  width: 32px;
+}
+.oui {
+  height: 100%;
+  width: 100%;
+}
+</style>
